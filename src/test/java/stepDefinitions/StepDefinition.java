@@ -23,7 +23,7 @@ public class StepDefinition {
         open();
     }
 
-//clicks settings and add recipe
+    //clicks settings and add recipe
     @When("I add a new recipe through settings button with name {string}")
     public void iAddANewRecipeThroughSettingsButtonWithName(String arg0)
     {
@@ -32,7 +32,8 @@ public class StepDefinition {
         screen.setAddRecipeOption();
         sleep(2000);
     }
-//inputs the text
+
+    //inputs the text
     @Then("I see the new recipe added with name {string}")
     public void iSeeTheNewRecipeAddedWithName(String arg0)
     {
@@ -42,13 +43,14 @@ public class StepDefinition {
         sleep(2000);
     }
 
+    //enters recipe name
     @When("I enter the recipe {string}")
     public void iEnterTheRecipe(String arg0)
     {
         screen.setRecipeNameRecipe();
         sleep(2000);
     }
-
+    //adds new ingredient for recipe
     @And("I add a new ingredient {string}")
     public void iAddANewIngredient(String arg0)
     {
@@ -56,6 +58,7 @@ public class StepDefinition {
         sleep(2000);
     }
 
+    //he sees item named bread and clicks on it
     @Then("I see the new added ingredient {string}")
     public void iSeeTheNewAddedIngredient(String arg0)
     {
@@ -63,6 +66,7 @@ public class StepDefinition {
         sleep(2000);
     }
 
+    //he deletes recipe
     @And("I delete the the recipe")
     public void iDeleteTheTheRecipe()
     {
@@ -74,7 +78,7 @@ public class StepDefinition {
         sleep(2000);
     }
 
-
+    //it checks if there is a recipe left
     @Then("I check if there is {string}")
     public void iCheckIfThereIs(String arg0)
     {
@@ -82,7 +86,7 @@ public class StepDefinition {
         sleep(3000);
     }
 
-
+    //adds recipe through button
     @When("I add new recipe through button")
     public void iAddNewRecipeThroughButton()
     {
